@@ -5,6 +5,6 @@ app = Flask(__name__)
 @app.route("/auth")
 def authorize():
     resp = make_response()
-    resp.headers["Location"] = "rtmp://172.20.0.3:1936/segmenter/colors"
+    resp.headers["Location"] = "rtmp://127.0.0.1:1935/pusher/colors"
     resp.status = 302
     return resp
